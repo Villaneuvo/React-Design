@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .heading-style {
+        font-size: 80px;
+        color: green;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <!-- <h1>Hello Lagi</h1> -->
+
+    <p class="lorem">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+      repellendus recusandae aliquid aspernatur repellat molestiae impedit? Illo
+      non dolorem sit soluta veritatis! Rerum enim obcaecati, sequi nam ut
+      voluptatibus repellat.
+    </p>
+    <p class="lorem">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, sit.
+      Expedita.
+    </p>
+
+    <button id="myBtn">Click Me!</button>
+
+    <script>
+      //   1. Intro
+      //   console.log("Connected!");
+
+      const heading = document.getElementsByTagName("h1");
+
+      //   heading[0].style.color = "red";
+      //   heading[1].style.color = "blue";
+
+      // 2. Selection
+      const button = document.getElementById("myBtn");
+      button.style.color = "red";
+
+      const paragraph = document.getElementsByClassName("lorem");
+      paragraph[1].style.fontSize = "35px";
+
+      const parWithQuery = document.querySelector(".lorem");
+      parWithQuery.style.color = "blue";
+      console.log(parWithQuery);
+
+      const parWithQueryAll = document.querySelectorAll(".lorem")[1];
+      console.log(parWithQueryAll);
+
+      button.addEventListener("click", () => {
+        heading[0].classList.toggle("heading-style");
+      });
+    </script>
+  </body>
+</html>
