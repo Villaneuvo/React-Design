@@ -4,9 +4,7 @@ import CartIcon from "../assets/icon-cart.svg";
 function Card() {
   return (
     <div className="flex flex-row mx-w-m m-auto rounded-lg overflow-hidden w-3/6 bg-white ">
-      <div className="wrapper-img w-1/2 h-[450px]">
-        <img src={Product} alt="Sunset in the mountains"></img>
-      </div>
+      <img src={Product} className="w-1/2" alt="Sunset in the mountains"></img>
       <div className="wrapper-content w-1/2 h-1/2 p-10">
         <div className="wrapper-category">
           <span className="text-gray-400 font-[montserrat] text-[14px] tracking-[0.5em]">
